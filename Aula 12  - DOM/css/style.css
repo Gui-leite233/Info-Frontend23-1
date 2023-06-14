@@ -14,7 +14,7 @@
 }
 
 .card {
-  border: 2px solid blueviolet;
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 10px;
   overflow: hidden;
 
@@ -36,7 +36,7 @@
 
 .card-titulo {
   text-align: center;
-  color: blueviolet;
+  color: rgba(71, 71, 71, 0.753);
 }
 
 .card-descricao {
@@ -44,11 +44,30 @@
   font-size: 0.8rem;
   flex-grow: 1;
 }
+.navbar-brand{
+  display: flex;
+  flex-direction: row;
+}
+main h1{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 5vh;
+}
 
+footer{
+  margin-top: 30px;
+  height: 200px;
+  background-color: rgba(102, 102, 102, 0.507);
+}
+
+.logo-footer{
+  display: flex;
+  justify-content: center;
+  height: 60%;
+  
+}
 @media (max-width: 600px) {
-  .container {
-    background-color: red;
-  }
 
   * {
     font-size: 22px;
@@ -60,9 +79,6 @@
 }
 
 @media (min-width: 601px) and (max-width: 801px) {
-  .container {
-    background-color: yellow;
-  }
 
   * {
     font-size: 20px;
