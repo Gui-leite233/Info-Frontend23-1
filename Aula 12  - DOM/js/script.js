@@ -46,4 +46,25 @@ const criacaoPosts = () => {
 
 window.onload = () => {
   criacaoPosts();
+
+  let cards = document.querySelectorAll(".card");
+
+  cards.forEach((card) => {
+    card.addEventListener("mousemove", () => {
+      card.getElementsByClassName.backgroundColor = "yellow";
+    });
+
+    card.addEventListener("mouseout", () => {
+      card.getElementsByClassName.backgroundColor = "transparent";
+    });
+
+    card.lastElementChild.addEventListener("click", (event) => {
+      event.preventDefault();
+      sessionStorage.setItem(
+        "idAnimal",
+        card.lastElementChild.getAttribute("idAnimal")
+      );
+      window.location.href = "../adotar.html"
+    });
+  });
 };
